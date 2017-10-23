@@ -74,7 +74,7 @@ pygments_style = 'sphinx'
 # -- Options for HTML output ----------------------------------------------
 html_theme = 'sphinx_italia_theme'
 
-html_theme_path = ["_themes", ]
+html_theme_path = ["_theme", ]
 
 # -- ReadTheDoc requirements and local template generation---------------------
 
@@ -83,7 +83,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
     html_theme = 'sphinx_italia_theme'
-    html_theme_path = ["_themes", ]
+    html_theme_path = ["_theme", ]
 else:
     # Override default css to get a larger width for ReadTheDoc build
     html_context = {
